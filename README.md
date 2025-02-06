@@ -1,17 +1,17 @@
+
 # ai-project-url_phishing
 ```
 About the Dataset
-The dataset is named dataset_phishing.csv.
-
-It contains approximately 11,000 instances, consisting of 50% phishing websites and 50% legitimate websites.
-
-It includes 89 features, out of which:
-
-56 are extracted from the structure and syntax of URLs.
-24 are extracted from the content of their corresponding pages.
-7 are extracted by querying external services.
-Some of the features include:
-
+Dataset Overview
+This project utilizes two primary datasets for detecting phishing websites:
+Primary Dataset: dataset_phishing.csv
+Instances: Approximately 11,000
+Distribution: 50% phishing websites, 50% legitimate websites
+Features: 89 features, categorized as follows:
+56 features extracted from the structure and syntax of URLs.
+24 features extracted from the content of their corresponding pages.
+7 features obtained by querying external services.
+Example Features:
 length_url
 length_hostname
 ip
@@ -19,19 +19,15 @@ nb_comma
 nb_dslash
 port
 prefix_suffix
-etc.
-
 
 ALTERNATIVE DATASET 
+Instances: 88,647
+Distribution:
 
-Larger Dataset: dataset_full.csv
-It contains:
+Legitimate websites (labeled as 0): 58,000 (65%)
+Phishing websites (labeled as 1): 30,647 (35%)
+Features: 111 features (excluding the target variable).
 
-Total number of instances: 88,647
-Legitimate website instances (labeled as 0): 58,000 (65%)
-Phishing website instances (labeled as 1): 30,647 (35%)
-Total number of features: 111 (excluding the target variable).
-Features (Brief Overview)
 URL-Based Features:
 
 qty_dot_url → Count of . in the URL
